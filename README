@@ -1,0 +1,21 @@
+Your challenge is to create a dashboard that helps us make the right choice based on GitHub activity (GitHub API - https://developer.github.com/v3/). for the following frameworks:
+
+React: https://github.com/facebook/react
+Angular: https://github.com/angular/angular.js
+Ember: https://github.com/emberjs/ember.js/
+Vue: https://github.com/vuejs/vue
+To really get a sense of how active development is on these frameworks, we need to be able to see updates to the dashboard without a page refresh. Please choose the 3 most relevant pieces of information from the following:
+
+Watchers
+Stars
+Forks
+Commits check
+Pull requests
+Issues
+etc…
+For this exercise, you can use any Javascript framework you would like (ex. Angular, Ember, React, Meteor, JQuery, Vue, etc...), but extra credit will be given for using Vanilla JS. (hint: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API). We're not worried about custom visual design for this challenge, so feel free to keep it pretty basic. You can use any CSS framework, or roll your own CSS. Your submission will be judged based on:
+
+Fulfilling the basic requirements above
+Helping us choose the right framework
+Code quality
+Your overall thought process (add your notes to a Readme)

@@ -1,0 +1,36 @@
+.container {
+  margin: 0 auto;
+  width: 1000px;
+}
+
+.title, .heading {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.react, .angular, .ember, .vue {
+  margin: 0 auto;
+  padding: 10px;
+}
+.weekly-total .total, .time {
+  font-size: 50px;
+  display: block;
+}
+
+.histogram .bar {
+  width: 20px;
+  margin: 2px;
+  background: #D64541;
+  display: inline-block;
+}
+
+.caption {
+  margin-top: 7px;
+  color: #aaa;
+}
+
+.metric {
+  text-align: center;
+  display: inline-block;
+  margin: 20px;
+}
