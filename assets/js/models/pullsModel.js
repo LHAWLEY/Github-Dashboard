@@ -5,9 +5,9 @@ class PullsModel extends BaseModel {
   }
 
   fetch() {
-    $.get(this.url, function(pulls){
+    this._fetch(function (pulls) {
       this.timeSince = moment(pulls[0].updated_at).fromNow(true);
       this.trigger('change');
-    }.bind(this))
+    }.bind(this));
   }
 }

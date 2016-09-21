@@ -19,3 +19,16 @@ Fulfilling the basic requirements above
 Helping us choose the right framework
 Code quality
 Your overall thought process (add your notes to a Readme)
+
+Thought Proces:
+
+**
+After thoroughly reviewing the activity and events API on github, I decided to use the statistics, issues, and pull request endpoints because I thought I could do more interesting visualizations and metrics with the information.
+
+I decided to track the number of commits per week and display it in a histogram to visually show how many commits are made to each framework per week and what days the most commits were made in that particular week.  I chose to monitor when when an issue was reported because I think that is an indicator of how engaged users are with the framework. Finally I chose to monitor when the last pull request was updated because I feel like that shows how quickly the developers are to responding to input from users.  I think that these three metrics really help give an idea of how active the repo owners are and how involved users are with the repo.
+
+My implementation is a Backbone-esque MVC pattern.  I think that this makes the code easier to review and find out how things are working together.
+
+For updating, I decided to poll for simplicity.  There are a few issues: undefined occasionally shows up when a render occurs.  This could be fixed by placing the model fetch's in a $.when statement, but because this is not a production app, I thought this was fine to punt on.
+
+**

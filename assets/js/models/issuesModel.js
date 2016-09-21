@@ -5,7 +5,7 @@ class IssuesModel extends BaseModel {
   }
 
   fetch() {
-    $.get(this.url, function(issues){
+    this._fetch(function(issues){
       this.timeSince = moment(issues[0].created_at).fromNow(true);
       this.trigger('change');
     }.bind(this))

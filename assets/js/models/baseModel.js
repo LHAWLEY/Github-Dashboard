@@ -5,6 +5,10 @@ class BaseModel {
     this.repo      = attrs.repo;
   }
 
+  _fetch (callback) {
+    window.fetch(this.url).then(function (response) { return response.json() }).then(callback)
+  }
+
   trigger(eventName) {
     var callback = this.callbacks[eventName]
 

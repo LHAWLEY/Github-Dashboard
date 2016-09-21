@@ -1,4 +1,4 @@
-$(document).ready(function() {
+(function() {
 
   function renderData() {
     var attrs = [
@@ -14,7 +14,7 @@ $(document).ready(function() {
       var pullsModel = new PullsModel(attr);
 
       var view = new MetricsView({
-        $el: $(attr.element),
+        el: document.querySelector(attr.element),
         activityModel: activityModel,
         issuesModel: issuesModel,
         pullsModel: pullsModel
@@ -28,4 +28,4 @@ $(document).ready(function() {
 
   renderData();
   setInterval(renderData, 60000);
-});
+})();

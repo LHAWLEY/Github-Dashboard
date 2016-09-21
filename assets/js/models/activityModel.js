@@ -5,7 +5,7 @@ class ActivityModel extends BaseModel {
   }
 
   fetch() {
-    $.get(this.url, function(yearsActivity){
+    this._fetch(function(yearsActivity){
       this.days = yearsActivity[0].days;
       this.weeksTotal = yearsActivity[0].total;
       this.trigger('change');
