@@ -1,6 +1,6 @@
 class MetricsView {
   constructor(attrs){
-    this.el           = attrs.el;
+    this.el            = attrs.el;
     this.activityModel = attrs.activityModel;
     this.issuesModel   = attrs.issuesModel;
     this.pullsModel    = attrs.pullsModel;

@@ -20,6 +20,7 @@
         pullsModel: pullsModel
       });
 
+// Put these into a queue and then re-render when all of the data comes back.  Doing this should stop the undefined notice from showing up.
       activityModel.fetch();
       issuesModel.fetch();
       pullsModel.fetch();
